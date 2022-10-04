@@ -17,11 +17,11 @@
         <h1>PASSWORD GE-NERA-TOR</h1>
         <div class="d-flex flex-column gap-2 mt-2">
           <label for="passwordLength" class="text-uppercase fw-bold">Panjang Password</label>
-          <input class="form-control" id="passwordLength" type="number" />
+          <input class="form-control form-control-lg" id="passwordLength" type="number" />
           <label for="password" class="text-uppercase fw-bold">Password</label>
-          <input class="form-control form-control-lg" id="password" type="password" />
-          <button class="btn btn-dark text-uppercase fw-bold btn-lg mt-2">generate password</button>
-          <button class="btn btn-primary text-uppercase fw-bold btn-lg">save password</button>
+          <input class="form-control form-control-lg" id="password" disabled />
+          <button class="btn btn-dark text-uppercase fw-bold btn-lg mt-2" onclick="getPassword()">generate password</button>
+          <a class="btn btn-primary text-uppercase fw-bold btn-lg mt-2" onclick="savePassword()" id="saveButton">save password</a>
         </div>
       </div>
     </div>
